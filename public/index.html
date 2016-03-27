@@ -2,7 +2,7 @@
 <html ng-app="portfolio">
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
   <script type="text/javascript" src="/assets/scripts/app.js"></script>
   <title>Angularized Portfolio</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 </head>
 <body>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/blog">Blog</a></li>
+    <li role="presentation"><a href="/github">Github</a></li>
+  </ul>
   {{4+4}}
+  <div ng-view></div>
 </body>
 </html>
