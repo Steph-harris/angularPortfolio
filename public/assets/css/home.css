@@ -24,6 +24,7 @@
   padding-top: 10%;
   margin-bottom: 0;
 }
+/*Redo this w/ directive*/
 @media only screen and (max-width: 320px) {
   #home h1  { font-size: 2.3em; }
 }
@@ -43,4 +44,73 @@
 .socIcons img {
   width: 50px;
   height: 50px;
+}
+
+/*ABOUT CSS*/
+#about{
+  padding: 7% 13%;
+  color: #fff;
+  background-color: #326379;
+}
+
+/*SKILLS CSS*/
+.tech {
+  background-color: rgba(113, 62, 0, 0.8);
+  padding-bottom: 8%
+}
+#skills{
+  color: white;
+  background-image: url("/assets/images/mouse.png");
+  /*background-size: cover;*/
+  background-size: 100% 100%;
+}
+#skills h1, #projectIms h1 {
+  text-align: center;
+  margin-top: 8%;
+}
+ul{
+  list-style-type: none;
+}
+#list-1>ul>li, #list-2>ul>li, #list-3>ul>li, #list-4>ul>li{
+  height: 50px;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+li>img{
+  position: relative;
+  top: 8px;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 20px;
+}
+
+/*CONTACT CSS*/
+#contact {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.contactPic {
+padding-right: 0;
+padding-left: 0;
+}
+#graySelfie{
+  width: auto;
+  margin-bottom: 0;
+}
+#contact p {
+padding-top: 13px;
+}
+#contact form {
+  padding-bottom: 8%;
+}
+#contactSocIcons {
+  margin-bottom: 7px;
+  padding-top: 5px;
+}
+.info {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
