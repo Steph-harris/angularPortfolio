@@ -19,7 +19,9 @@ angular.module("portfolio", ['ngRoute'])
       .when('/blog', {
         templateUrl:"/views/blog.html"
       })
-      .when('/github', {
+      .when('/funfacts', {
+        templateUrl:"views/fun.html"
+      }).when('/github', {
         templateUrl:"views/github.html"
       });
 

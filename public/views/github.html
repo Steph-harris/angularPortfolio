@@ -1,1 +1,35 @@
-<h2>This is my github log</h2>
+<div ng-controller="gitController">
+  <div class="row-fluid">
+    <div class="col-xs-12">
+      <div>
+        <h1>Projects</h1>
+        <h3>Github Repos:</h3>
+        <p class="visible-xs">Click on a repo, then scroll down to see its recent commit history</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row projects">
+    <div class="list-group col-xs-12 col-sm-4 col-md-3">
+      <div class="list-group-item" ng-repeat="repo in repos">
+        <a href="#" ng-click="getCommits()">{{repo.full_name}}</a>
+      </div>
+    </div>
+
+    <div class="table-responsive col-xs-12 col-sm-8 col-md-9">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>SHA</th>
+            <th>Author</th>
+            <th>Commit Message</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
