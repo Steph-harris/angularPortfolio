@@ -6,5 +6,11 @@ angular.module("portfolio")
         $scope.repos = response.data;
       });
     //when a repo is clicked, get my commits, sha, and date
+    $scope.getCommits = function(){
+      $http.get('https://api.github.com/repos/Steph-harris/' + $scope.repo.name + '/commits')
+        .then(function(commits){
+          $scope.repos.commits = commits.data;
+        });
+    }
     //clicking sha takes user to that commits github page
   });
