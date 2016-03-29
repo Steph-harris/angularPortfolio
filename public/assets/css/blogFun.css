@@ -1,0 +1,11 @@
+/*Blog CSS*/
+.blog {
+  background-image: url("/assets/images/linedpaper.png");
+}
+blockquote {
+  border: 3px solid #eee;
+}
+/*Repo CSS*/
+td>a:hover {
+  color: #DE9E29;
+}

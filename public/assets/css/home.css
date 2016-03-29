@@ -84,33 +84,3 @@ li>img{
   width: 20px;
   margin-bottom: 20px;
 }
-
-/*CONTACT CSS*/
-#contact {
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-}
-.contactPic {
-padding-right: 0;
-padding-left: 0;
-}
-#graySelfie{
-  width: auto;
-  margin-bottom: 0;
-}
-#contact p {
-padding-top: 13px;
-}
-#contact form {
-  padding-bottom: 8%;
-}
-#contactSocIcons {
-  margin-bottom: 7px;
-  padding-top: 5px;
-}
-.info {
-  position: relative;
-  padding-top: 15%;
-  padding-bottom: 15%;
-}
