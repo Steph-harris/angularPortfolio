@@ -12,7 +12,7 @@
   <div class="row projects">
     <div class="list-group col-xs-12 col-sm-4 col-md-3">
       <div class="list-group-item" ng-repeat="repo in repos">
-        <a href="#" ng-click="getCommits()">{{repo.name}}</a>
+        <a href="#" ng-click="getCommits(repo.name)">{{repo.name}}</a>
       </div>
     </div>
 
@@ -27,7 +27,14 @@
           </tr>
         </thead>
         <tbody>
-
+          <tr ng-repeat="commit in commits">
+            <td>
+              <a href={{commit.html_url}}>{{commit.sha | limitTo:8 }}</a>
+            </td>
+            <td>{{commit.commit.author.name}}</td>
+            <td>{{commit.commit.message}}</td>
+            <td>{{commit.commit.author.date}}</td>
+          </tr>
         </tbody>
       </table>
     </div>
